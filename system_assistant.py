@@ -2,9 +2,9 @@ import pyttsx3
 import os
 from datetime import date
 
-print("=============================================================================================================================================================")
+print("====================================================================================================================================================================")
 print("                                                            Your System Assistant                                                                  ")
-print("=============================================================================================================================================================")
+print("====================================================================================================================================================================")
 pyttsx3.speak("Welcome, How can I assist you?")
 
 while(True):
@@ -69,7 +69,7 @@ while(True):
 	elif('paint' in val):
 		pyttsx3.speak('opening paint')
 		os.system("mspaint")
-	elif('wps office' in val):
+	elif('wps office' in val or 'wps' in val):
 		pyttsx3.speak("opening wps office")
 		os.system('ksolaunch')
 	elif('gmail' in val):
@@ -77,7 +77,7 @@ while(True):
 		os.system('chrome www.gmail.com')
 		
 	elif(("exit" in val) or ('close' in val) or ('turn off' in val)):
-		pyttsx3.speak("Thank you for using , Hope you like it")
+		pyttsx3.speak("Thank you for using our services , Hope you like it")
 		break
 	else:
 		pyttsx3.speak("This program is not supported")
